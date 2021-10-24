@@ -2,7 +2,11 @@
 
 *{
   box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  letter-spacing: 1px;
+  color: #939093;
 }
+
 
 /* Nav bar CSS */
 .Navbar{
