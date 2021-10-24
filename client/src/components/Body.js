@@ -46,6 +46,7 @@ const Body = () => {
         })
         .then((r) => r.json())
         .then((newGame) => onAddGame(newGame));
+    
     }
 
     function onUpdateGame(updatedGame) {
@@ -64,47 +65,52 @@ const Body = () => {
     return (
         <div>
             <div>
-                <form onSubmit={handleSubmit} className="centering">
+            
+            <div className="herosection">
+                <img src="https://i.imgur.com/VRafUnO.jpg"/>
+                </div>
+                
+               <h3 className="addnewgame">Add a new game ⬇️</h3>
+                <form onSubmit={handleSubmit} className="newgameform">
                 <input
                 type="text"
-                placeholder="Game title"
+                placeholder="Game Title"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 />
                 <input
                 type="text"
-                placeholder="Date"
+                placeholder="Release Date"
                 value={releaseDate}
                 onChange={(e) => setReleaseDate(e.target.value)}
                 />
                 <input
                 type="number"
-                placeholder="Price"
+                placeholder="$ Price"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
                 />
                 <input
                 type="string"
-                placeholder="Image"
+                placeholder="Image Address"
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
                 />
                  <input
                 type="string"
-                placeholder="genre"
+                placeholder="Genre"
                 value={genre}
                 onChange={(e) => setGenre(e.target.value)}
                 />
-                <button type="submit" className="centeringBtn">Save</button>
+                <button type="submit" className="centeringBtn">Add</button>
                 </form>
-                <div>
-                
-                </div>
+              
+               
             </div>
-            <h1 className="centeringBack"></h1>
-            <div className="cardTable">
+           
+            <div className="cardcontainer">
             {games.map(game => (
-                <div classNmae="everything">
+                <div className="cardindividual">
                     <GameList
                     key={games.id}
                     game={game}

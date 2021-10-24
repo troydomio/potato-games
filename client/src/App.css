@@ -1,4 +1,84 @@
-.navBar {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+/* Nav bar CSS */
+.Navbar{
+  /* border-bottom: #f1f2f6 .5px solid; */
+  color: #747d8c;
+  margin-bottom: 1%;
+  font-family: 'Mulish', sans-serif;
+ letter-spacing: 2px;
+ margin-left: 2%;
+}
+
+/* + New game form CSS */
+.addnewgame{
+  color: #939093;
+  font-family: 'Mulish', sans-serif;
+ letter-spacing: 2px;
+ margin-left: 2%;
+}
+.newgameform{
+/* border: black 1px solid; */
+margin-left: 1.5%;
+
+}
+.newgameform input{
+  border: none;
+  outline: none;
+  border-bottom: #b9b7b9 solid 3px;
+  margin:1%;
+}
+.newgameform button{
+border: #b9b7b9 1px solid;
+box-shadow: 5px 5px 5px #b7b9b7;
+border-radius: 20px;
+width: 10%;
+background-color: white;
+}
+
+/* Hero Section */
+.herosection{
+  /* border: black 1px solid; */
+  display: flex;
+}
+.herosection img{
+ width: 100%;
+  height: 500px;
+  box-shadow: 3px 5px 5px #b7b9b7;
+}
+
+/* Card Container */
+.cardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  align-items: center;
+  justify-content: center;
+}
+.cardindividual{
+  border: solid 1px #b7b9b7;
+  margin: .3%;
+  padding: 1%;
+}
+.cardindividual button{
+  background-color: white;
+  border: #b9b7b9 1px solid;
+box-shadow: 5px 5px 5px #b7b9b7;
+border-radius: 20px;
+padding: 3%;
+margin: 2%;
+}
+.cardindividual img{
+  width:270px;
+  height:300px;
+  padding:3%;
+}
+
+/* .navBar {
   text-align: center;
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
@@ -20,13 +100,8 @@
 }
 
 
-nav {
-  background-image: url("https://www.ksnt.com/wp-content/uploads/sites/86/2020/12/Fire-House-Structure-Blaze.png?strip=1");
-  
+nav {  
   height: 100px;
-
-  opacity: 0.5;
- 
 }
 
 
@@ -82,13 +157,11 @@ nav a:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   padding-bottom: 5%;
   padding-right: 3%;
   margin-left: 1%;
-
   padding: 5em;
 }
 
@@ -191,4 +264,4 @@ img {
 
 .everything{
   background-image: url("http://pixeljoint.com/files/icons/full/asdf__r1915390541.png");
-}
+} */

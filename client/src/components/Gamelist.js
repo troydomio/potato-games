@@ -38,6 +38,7 @@ const Gamelist =  ({game, deleteItem, onUpdateGame}) => {
           .then((r) => r.json())
           .then((newGame) => {onUpdateGame(newGame);
           });
+          
       }
     
       function handleEdit(){
